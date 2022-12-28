@@ -5,7 +5,7 @@ Version Control Tool/Software, allows you to save checkpoints of your code chang
 Service that uses git to store projects on the cloud and allows you to collaborate with others
 
 ## General Concepts / Terminology
-- `Repository` - The project that git is configured for
+- `Repository` - The project that git is configured with
   - **Local** Repository - On your computer
   - **Remote** Repository - On the cloud (github)
 - `Commit` - a checkpoints of saved code changes
@@ -18,8 +18,17 @@ Service that uses git to store projects on the cloud and allows you to collabora
 - To check if a project is a git repository, run `git status`
 - To initialize a project as a repository run `git init`
 
+## How to check if a project (folder) is a git repository
+1. Navigate to the location of your project
+2. Run:
+    ```commandline
+     git status
+    ```
+3. If you get this message (then it is not a git repository):
+    >  fatal: not a git repository (or any of the parent directories): .git
+
 ## Git Commands
-- Create new git repo in your current location
+- Create new git repository in your current location
   ```commandline
   git init
   ```
@@ -40,6 +49,10 @@ Service that uses git to store projects on the cloud and allows you to collabora
   git log
   git log --oneline
   ```
+- Remove files or folders from staged area
+    ```commandline
+    git restore --staged <file-name>
+    ```
 - Reset to an older commit
   ```commandline
   git reset <commit-id>
