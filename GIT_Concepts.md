@@ -58,3 +58,25 @@ Service that uses git to store projects on the cloud and allows you to collabora
   git reset <commit-id>
   git reset --hard <commit-id>
   ```
+  
+
+- Link local repository with remote repository 
+  ```commandline
+  git remote add origin <github repository url>  
+  ```
+
+- Copy new commits from local repository to the remote repository
+
+  First time run:
+  ```commandline
+  git push -u origin <branch-name>
+  ```
+  Subsequent times, run:
+  ```commandline
+  git push
+  ```
+  
+- Get new updates from the remote branch
+  ```commandline
+  git pull
+  ```
