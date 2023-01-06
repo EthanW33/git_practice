@@ -3,3 +3,4 @@ for i in range(4, 0, -1):
 
 
 print("A triangle is printed above")
+print("A triangle is printed above")
